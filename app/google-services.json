@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "687419014867",
+    "project_id": "finalprojectclassroom",
+    "storage_bucket": "finalprojectclassroom.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:687419014867:android:e534e876f22553b4d61e26",
+        "android_client_info": {
+          "package_name": "com.example.finalprojectclassroom"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "687419014867-nj3h7pbhsurg75r9r79i4v6cd7siicgq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBwbNWfbwTkl-mYtgA_a4M9XyrgUPUtsrI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "687419014867-nj3h7pbhsurg75r9r79i4v6cd7siicgq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        tools:ignore="MissingConstraints">
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:title="Home">
+            <ImageView
+                android:id="@+id/logout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/outline_logout_24"
+                android:layout_gravity="right"
+                android:layout_marginEnd="16dp"/>
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp">
+        <TextView
+            android:id="@+id/textViewListaTarefa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lista de tarefas"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="23dp"/>
+        <EditText
+            android:id="@+id/editTextTarefa"
+            android:layout_below="@id/textViewListaTarefa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tarefa"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:padding="20dp"
+            />
+        <LinearLayout
+            android:id="@+id/linerLayoutButtonActions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/editTextTarefa"
+            android:padding="10dp">
+            <Button
+                android:id="@+id/btnAdicionar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Adicionar"
+                android:layout_weight="1"/>
+            <Button
+                android:id="@+id/btnDeletar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Deletar"
+                android:layout_weight="1" />
+            <Button
+                android:id="@+id/btnLimpar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Limpar"
+                android:layout_weight="1"/>
+        </LinearLayout>
+        <TextView
+            android:layout_below="@+id/linerLayoutButtonActions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Minhas tarefas"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:id="@+id/subtitleView"
+            android:padding="10dp"
+            android:gravity="center"/>
+
+        <ListView
+            android:id="@+id/ListaDeVisualizacao"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/subtitleView"
+            android:choiceMode="multipleChoice"/>
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
